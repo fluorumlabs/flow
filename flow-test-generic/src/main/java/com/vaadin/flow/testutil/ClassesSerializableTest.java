@@ -16,6 +16,9 @@
 
 package com.vaadin.flow.testutil;
 
+import static java.lang.reflect.Modifier.isStatic;
+import static org.junit.Assert.fail;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.ObjectInputStream;
@@ -34,9 +37,6 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import org.junit.Test;
-
-import static java.lang.reflect.Modifier.isStatic;
-import static org.junit.Assert.fail;
 
 /**
  * A superclass for serialization testing. The test scans all the classpath and
@@ -139,6 +139,10 @@ public abstract class ClassesSerializableTest extends ClassFinder {
                 "com\\.vaadin\\.flow\\.component\\.polymertemplate\\.TemplateInitializer(\\$.*)?",
                 "com\\.vaadin\\.flow\\.component\\.polymertemplate\\.TemplateParser(\\$.*)?",
                 "com\\.vaadin\\.flow\\.component\\.littemplate\\.LitTemplateInitializer(\\$.*)?",
+                "com\\.vaadin\\.flow\\.component\\.template\\.internal\\.AttributeInitializationStrategy",
+                "com\\.vaadin\\.flow\\.component\\.template\\.internal\\.PropertyInitializationStrategy",
+                "com\\.vaadin\\.flow\\.component\\.template\\.internal\\.ElementInitializationStrategy",
+                "com\\.vaadin\\.flow\\.component\\.template\\.internal\\.InjectableElementInitializer",
                 "com\\.vaadin\\.flow\\.dom\\.impl\\.ThemeListImpl\\$ThemeListIterator",
                 "com\\.vaadin\\.flow\\.templatemodel\\.PropertyMapBuilder(\\$.*)?",
                 "com\\.vaadin\\.flow\\.internal\\.ReflectionCache",
