@@ -87,8 +87,8 @@ class LitTemplateDataAnalyzer implements Serializable {
                 templateRoot);
         idExtractor.collectInjectedIds(Collections.emptySet());
         return new ParserData(idExtractor.getIdByField(),
-                idExtractor.getTagById(), Collections.emptySet(),
-                Collections.emptyList());
+                idExtractor.getTagById(), Collections.emptyMap(),
+                Collections.emptySet(), Collections.emptyList());
     }
 
     private String getTag(Class<? extends LitTemplate> clazz) {
