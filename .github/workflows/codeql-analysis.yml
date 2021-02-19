@@ -15,9 +15,13 @@ name: "CodeQL"
 on:
   push:
     branches: [ master ]
+    paths-ignore:
+      - '**/target'
   pull_request:
     # The branches below must be a subset of the branches above
     branches: [ master ]
+    paths-ignore:
+      - '**/target'
   schedule:
     - cron: '23 4 * * 3'
 
@@ -65,7 +69,6 @@ jobs:
       name: Build Java
       run: |
        mvn install -DskipTests
-       mvn clean compile
     #   make release
 
     - name: Perform CodeQL Analysis
