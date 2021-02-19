@@ -61,7 +61,9 @@ jobs:
     #    and modify them (or add more) to build your code if your project
     #    uses a compiled language
 
-    - run: |
+    - if: matrix.language == 'java' 
+      name: Build Java
+      run: |
        mvn install -DskipTests
        mvn clean compile
     #   make release
