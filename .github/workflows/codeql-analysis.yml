@@ -62,7 +62,8 @@ jobs:
     #    uses a compiled language
 
     - run: |
-       mvn compile
+       mvn install -DskipTests
+       mvn clean compile
     #   make release
 
     - name: Perform CodeQL Analysis
