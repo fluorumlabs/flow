@@ -1,4 +1,5 @@
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/vaadin/flow#?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ffluorumlabs%2Fflow.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Ffluorumlabs%2Fflow?ref=badge_shield)
 
 Vaadin Flow
 ======
@@ -108,3 +109,7 @@ In eclipse run .launch files from flow-client/eclipse in the order:
 
 More info about SuperDevMode: http://www.gwtproject.org/articles/superdevmode.html
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ffluorumlabs%2Fflow.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Ffluorumlabs%2Fflow?ref=badge_large)
