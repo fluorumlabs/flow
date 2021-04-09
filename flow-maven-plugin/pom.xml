@@ -53,7 +53,7 @@
         <dependency>
             <groupId>com.github.eirslett</groupId>
             <artifactId>frontend-plugin-core</artifactId>
-            <version>1.6</version>
+            <version>1.11.2</version>
         </dependency>
 
         <dependency>
