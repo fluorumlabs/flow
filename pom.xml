@@ -81,7 +81,7 @@
         <failOnMissingWebXml>false</failOnMissingWebXml>
 
         <!-- Dependencies -->
-        <gwt.version>2.8.2</gwt.version>
+        <gwt.version>2.9.0</gwt.version>
         <hibernate.validator.version>6.0.1.Final</hibernate.validator.version>
         <slf4j.version>1.7.30</slf4j.version>
         <polymer.version>2.6.1</polymer.version>
@@ -128,7 +128,7 @@
 
         <!-- This property is needed to allow some Win-specific unit tests -->
         <!-- to be disabled via system property in CI until they got fixed-->
-        <exclude.windows.failed.tests></exclude.windows.failed.tests>
+        <exclude.windows.failed.tests/>
     </properties>
 
     <repositories>
@@ -451,8 +451,7 @@
                             </goals>
                             <configuration>
                                 <rules>
-                                    <restrictImports
-                                            implementation="de.skuzzle.enforcer.restrictimports.RestrictImports">
+                                    <restrictImports implementation="de.skuzzle.enforcer.restrictimports.RestrictImports">
                                         <reason>Use SLF4j for logging</reason>
                                         <bannedImport>java.util.logging.**
                                         </bannedImport>
@@ -530,7 +529,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore></ignore>
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -549,7 +548,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore></ignore>
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -568,7 +567,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore></ignore>
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                             </pluginExecutions>
