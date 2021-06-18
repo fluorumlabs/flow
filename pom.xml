@@ -128,7 +128,7 @@
 
         <!-- This property is needed to allow some Win-specific unit tests -->
         <!-- to be disabled via system property in CI until they got fixed-->
-        <exclude.windows.failed.tests></exclude.windows.failed.tests>
+        <exclude.windows.failed.tests/>
     </properties>
 
     <repositories>
@@ -236,7 +236,7 @@
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
-                <version>4.12</version>
+                <version>4.13.1</version>
             </dependency>
             <dependency>
                 <groupId>org.mockito</groupId>
@@ -451,8 +451,7 @@
                             </goals>
                             <configuration>
                                 <rules>
-                                    <restrictImports
-                                            implementation="de.skuzzle.enforcer.restrictimports.RestrictImports">
+                                    <restrictImports implementation="de.skuzzle.enforcer.restrictimports.RestrictImports">
                                         <reason>Use SLF4j for logging</reason>
                                         <bannedImport>java.util.logging.**
                                         </bannedImport>
@@ -530,7 +529,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore></ignore>
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -549,7 +548,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore></ignore>
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -568,7 +567,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore></ignore>
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                             </pluginExecutions>
